@@ -24,14 +24,13 @@ public class NumberConversionController implements Initializable
 
     private NumberConversionModel ncmodel = new NumberConversionModel();
 
-    @FXML
-    private Label label;
-
+//    @FXML
+//    private Label label; //Label to the greetings message
     @FXML
     private TextField txtNumberInput;
 
     @FXML
-    private Label lblResult;
+    private TextField txtResult;
 
     @FXML
     private void handleButtonAction(ActionEvent event)
@@ -41,7 +40,7 @@ public class NumberConversionController implements Initializable
         double txtFieldValue = Double.parseDouble(txtNumberInput.getText());
         double resultInMiles = ncmodel.getMilesFromKilometers(txtFieldValue);
         String resultAsString = String.format("%.3f", resultInMiles);
-        lblResult.setText(resultAsString);
+        txtResult.setText(resultAsString);
     }
 
     @FXML
@@ -52,23 +51,23 @@ public class NumberConversionController implements Initializable
         double txtFieldValue = Double.parseDouble(txtNumberInput.getText());
         double resultInMiles = ncmodel.getKilometersFromMiles(txtFieldValue);
         String resultAsString = String.format("%.3f", resultInMiles);
-        lblResult.setText(resultAsString);
+        txtResult.setText(resultAsString);
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
-        TextInputDialog dialog = new TextInputDialog("");
-
-        dialog.setTitle("Text Input Dialog");
-        dialog.setContentText("Please enter your name:");
-
-        Optional<String> result = dialog.showAndWait();
-        if (result.isPresent())
-        {
-            String message = ncmodel.getGreetingsMessage(result.get());
-            label.setText(message);
-        }
+//        TextInputDialog dialog = new TextInputDialog("");
+//
+//        dialog.setTitle("Text Input Dialog");
+//        dialog.setContentText("Please enter your name:");
+//
+//        Optional<String> result = dialog.showAndWait();
+//        if (result.isPresent())
+//        {
+//            String message = ncmodel.getGreetingsMessage(result.get());
+//            label.setText(message);
+//        }
     }
 
 }

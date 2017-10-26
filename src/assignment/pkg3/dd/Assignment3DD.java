@@ -21,7 +21,7 @@ public class Assignment3DD extends Application
     @Override
     public void start(Stage stage) throws Exception
     {
-        Parent root = FXMLLoader.load(getClass().getResource("BMIConversion.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ChooseConversion.fxml"));
 
         Scene scene = new Scene(root);
 

@@ -39,6 +39,5 @@
       </Label>
       <TextField fx:id="lblResult" editable="false" layoutX="14.0" layoutY="219.0" prefHeight="25.0" prefWidth="169.0" />
       <Button fx:id="btnCalcBMI" layoutX="58.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Calculate!" />
-      <Label layoutX="4.0" layoutY="286.0" text="\@Ddose" />
    </children>
 </AnchorPane>
