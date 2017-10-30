@@ -7,15 +7,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="290.0" style="-fx-background-color: white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="assignment.pkg3.dd.ChooseConversionController">
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="290.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment.pkg3.dd.ChooseConversionController">
    <children>
       <ImageView fitHeight="339.0" fitWidth="314.0" layoutY="31.0">
          <image>
             <Image url="@../../../ChooseConversionBackground.jpg" />
          </image>
       </ImageView>
-      <ComboBox fx:id="comboChoose" layoutX="82.0" layoutY="188.0" onAction="#handleSelectComboBox" opacity="0.8" prefWidth="150.0" promptText="Choose  calculator" />
+      <ComboBox fx:id="comboChoose" layoutX="82.0" layoutY="188.0" onAction="#handleSelectComboBox" opacity="0.8" prefWidth="150.0" promptText="Choose  calculator" style="-fx-font-family: Agency FB;" />
       <Label layoutX="49.0" layoutY="20.0" text="Welcome to another type of calculator">
          <font>
             <Font name="Agency FB" size="18.0" />
